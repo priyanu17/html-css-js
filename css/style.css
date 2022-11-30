@@ -36,7 +36,37 @@ p {
 li {
   font-size: 20px;
 }
-/* Descendent selector */
+
+/* Descendent selector 
+=> Not a good practice to use these 
+=> Use ids and classes instead
+
+article header p {
+  font-style: italic;
+} 
 footer p {
   font-size: 16px;
+} */
+
+#author {
+  color: rgb(4, 1, 1);
+  font-style: italic;
+  background-color: pink;
+}
+
+#copyright {
+  font-size: 16px;
+  color: rgb(9, 118, 118);
+}
+
+.related-author {
+  font-size: 18px;
+  color: rgb(176, 7, 114);
+  font-weight: bolder;
+}
+
+/* challenge */
+
+.related {
+  list-style: none;
 }

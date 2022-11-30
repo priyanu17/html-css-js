@@ -26,7 +26,9 @@
           height="100"
           width="100"
         />
-        <p>Posted by <strong>Laura Jones </strong>on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones </strong>on Monday, June 21st 2027
+        </p>
         <img
           src="images/post-img.jpg"
           alt="HTML code on screen"
@@ -95,7 +97,7 @@
     </article>
     <aside>
       <h4>Related Posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="images/related-1.jpg"
@@ -104,7 +106,7 @@
             width="100"
           />
           <a href="#">How to learn Web development</a>
-          <p>By Jonas</p>
+          <p class="related-author">By Jonas</p>
         </li>
         <li>
           <img
@@ -114,7 +116,7 @@
             width="100"
           />
           <a href="#">How to learn Web development</a>
-          <p>By Jonas</p>
+          <p class="related-author">By Anu</p>
         </li>
         <li>
           <img
@@ -124,10 +126,12 @@
             width="100"
           />
           <a href="#">How to learn Web development</a>
-          <p>By Jonas</p>
+          <p class="related-author">By Harry</p>
         </li>
       </ul>
     </aside>
-    <footer><p>Copyright &copy; 2027 by the Code Magazine</p></footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 by the Code Magazine</p>
+    </footer>
   </body>
 </html>
