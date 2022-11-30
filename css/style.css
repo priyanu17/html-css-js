@@ -107,3 +107,22 @@ li:nth-child(even) {
 article p:first-child {
   color: red;
 }
+
+/* styling links */
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: purple;
+}
+
+/* when link is being pressed */
+a:active {
+  background-color: black;
+}
