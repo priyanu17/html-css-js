@@ -7,7 +7,8 @@ h4,
 h5,
 h6,
 p,
-li {
+li,
+nav {
   font-family: sans-serif;
   color: #333;
 }
@@ -57,11 +58,6 @@ footer p {
 
 #author {
   font-style: italic;
-}
-
-#copyright {
-  font-size: 16px;
-  color: rgb(93, 119, 9);
 }
 
 .related-author {
@@ -125,4 +121,27 @@ a:hover {
 /* when link is being pressed */
 a:active {
   background-color: black;
+}
+
+/* Resolving conflicting selectors */
+
+/* id selector has highest priority */
+#copyright {
+  font-size: 38px;
+  color: green;
+}
+
+.copyright {
+  font-size: 40px;
+  color: red;
+}
+
+.text {
+  color: black;
+  background-color: antiquewhite;
+  margin-bottom: 500px;
+}
+
+footer p {
+  color: purple !important;
 }
