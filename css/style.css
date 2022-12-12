@@ -1,14 +1,5 @@
-/* Multiple selectors */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li,
-nav {
+/* These styles will be inherited */
+body {
   font-family: sans-serif;
   color: #333;
 }
@@ -92,16 +83,16 @@ li:last-child {
 }
 
 li:nth-child(odd) {
-  color: rgb(192, 17, 41);
+  color: rgb(192, 0, 41);
 }
 
 li:nth-child(even) {
-  color: rgb(135, 174, 7);
+  color: rgb(78, 174, 7);
 }
 
 /* sample pseudo class */
 article p:first-child {
-  color: red;
+  color: green;
 }
 
 /* styling links */
