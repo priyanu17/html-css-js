@@ -107,6 +107,7 @@ footer p {
   /* Shorthand padding specified */
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 100px;
 }
 
 aside {
@@ -114,6 +115,7 @@ aside {
   border-top: 5px solid #1098bd;
   border-bottom: 5px solid #1098bd;
   padding: 50px 0;
+  width: 500px;
 }
 
 /* Pseudo Class */
@@ -182,4 +184,17 @@ a:active {
 
 footer p {
   color: purple !important;
+}
+
+.post-img {
+  /* width: 900px; */
+  width: 100%;
+  height: auto;
+}
+/* Centering our content */
+
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
