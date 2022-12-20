@@ -1,11 +1,12 @@
 body {
-  border: 5px solid black;
+  border: 4px solid black;
   margin-bottom: 100px;
   padding: 0;
 }
 
 * {
   font-family: sans-serif;
+  line-height: 1.4;
 }
 
 .header {
@@ -15,10 +16,10 @@ body {
 }
 
 .price {
-  font-size: 20px;
+  font-size: 22px;
 }
 .bold-text {
-  font-size: 14px;
+  font-size: 12px;
   color: #444;
   text-transform: uppercase;
   font-weight: bold;
@@ -28,18 +29,16 @@ body {
   color: black;
 }
 
-a:link {
+.more-info:link,
+.more-info:visited {
   color: black;
 }
 
-a:visited {
-  color: black;
-}
-
-a:hover {
+.more-info:hover {
   color: red;
+  text-decoration: none;
 }
-a:active {
+.more-info:active {
   background-color: black;
 }
 
@@ -47,7 +46,16 @@ a:active {
   background-color: black;
   color: white;
   text-transform: uppercase;
-  border-color: black;
+  border-width: 0;
   padding: 2px;
   font-size: 16px;
+}
+.produce-list {
+  list-style: square;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }

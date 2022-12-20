@@ -2,7 +2,7 @@
 body {
   font-family: sans-serif;
   color: #333;
-  border-top: solid 10px red;
+  /* border-top: solid 10px red; */
 }
 
 /* We can also select html selector, outside body */
@@ -14,7 +14,7 @@ html {
 /* Universal Selector */
 /* This one actually gets applied to all elements on the page, although this has low priority */
 * {
-  border-top: #1098bd solid 10px;
+  /* border-top: #1098bd solid 10px; */
   font-family: sans-serif;
 }
 
@@ -48,6 +48,7 @@ p {
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 /* Descendent selector 
@@ -79,6 +80,7 @@ footer p {
 
 .main-header {
   background-color: #cdcaca;
+  padding: 20px;
 }
 
 aside {
@@ -115,11 +117,11 @@ a:link {
 }
 
 a:visited {
-  color: #429804;
+  color: #1098bd;
 }
 
 a:hover {
-  color: purple;
+  color: rgb(2, 128, 0);
 }
 
 /* when link is being pressed */
