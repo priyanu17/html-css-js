@@ -53,6 +53,7 @@ p {
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 15px;
+  /* display: inline; */
 }
 
 ul,
@@ -106,8 +107,8 @@ footer p {
   padding-right: 40px; */
   /* Shorthand padding specified */
   padding: 20px 40px;
-  margin-bottom: 60px;
-  height: 100px;
+  margin-bottom: 40px;
+  /* height: 100px; */
 }
 
 aside {
@@ -150,13 +151,35 @@ a:link {
   text-decoration: none;
 }
 
+nav a:link {
+  /* background-color: white; */
+  /* margin: 100px; */
+  /* padding: 50px; */
+  /* display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Chaining pseudo classes */
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
 a:visited {
   color: #1098bd;
+  /* margin: 100px; */
 }
 
 a:hover {
   color: rgb(2, 128, 0);
 }
+
+/* nav {
+  background-color: #1098bd;
+} */
 
 /* when link is being pressed */
 a:active {
@@ -197,4 +220,5 @@ footer p {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+  /* margin: auto; */
 }
