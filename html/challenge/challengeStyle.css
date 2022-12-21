@@ -102,4 +102,52 @@ li {
   margin-bottom: 8px;
 }
 
-/* TYPES of boxes */
+/* Challenge 3 */
+
+.container {
+  position: relative;
+}
+
+.container::after {
+  content: 'SALE';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.colors {
+  word-spacing: 1;
+  margin-bottom: 20px;
+}
+
+.el {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.el-1 {
+  background-color: red;
+}
+
+.el-2 {
+  background-color: rgb(225, 162, 16);
+}
+.el-3 {
+  background-color: rgb(221, 255, 0);
+}
+.el-4 {
+  background-color: rgb(77, 255, 0);
+}
+.el-5 {
+  background-color: rgb(0, 247, 255);
+}
+.el-6 {
+  background-color: rgb(0, 64, 255);
+}
