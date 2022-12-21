@@ -220,5 +220,22 @@ footer p {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   /* margin: auto; */
+}
+
+/* Absolute Positioning */
+
+.like-button {
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+body {
+  /* For Absolute position of like button */
+  position: relative;
 }
