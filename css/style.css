@@ -19,6 +19,7 @@ html {
   /* Global Reset */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -45,9 +46,10 @@ h3 {
   margin-bottom: 40px;
 }
 h4 {
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 20px;
 }
 p {
   font-size: 18px;
@@ -79,9 +81,10 @@ li:last-child {
 article header p {
   font-style: italic;
 } 
+*/
 footer p {
-  font-size: 16px;
-} */
+  font-size: 12px;
+}
 
 #author {
   font-style: italic;
@@ -100,7 +103,7 @@ footer p {
 }
 
 .main-header {
-  background-color: #cdcaca;
+  background-color: #f7f7f7;
   /* Normal padding syntax
   padding: 20px;
   padding-left: 40px;
@@ -112,7 +115,7 @@ footer p {
 }
 
 aside {
-  background-color: #cdcaca;
+  background-color: #f7f7f7;
   border-top: 5px solid #1098bd;
   border-bottom: 5px solid #1098bd;
   padding: 50px 0;
@@ -162,6 +165,11 @@ nav a:link {
   display: inline-block;
 }
 
+.related-img {
+  height: 60px;
+  width: 60px;
+}
+
 /* Chaining pseudo classes */
 
 nav a:link:last-child {
@@ -190,7 +198,7 @@ a:active {
 
 /* id selector has highest priority */
 #copyright {
-  font-size: 24px;
+  font-size: 14px;
   color: green;
 }
 
@@ -217,10 +225,10 @@ footer p {
 /* Centering our content */
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  /* position: relative; */
   /* margin: auto; */
 }
 
@@ -265,4 +273,50 @@ h1::first-letter {
   position: absolute;
   top: -10px;
   right: -25px;
+}
+
+/* Floats, Float Layouts */
+
+.author {
+  float: left;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  float: left;
+}
+
+.page-nav {
+  float: right;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+  padding: 40px 50px;
+}
+
+footer {
+  clear: both;
+}
+
+.related {
+  margin-left: 0;
 }
