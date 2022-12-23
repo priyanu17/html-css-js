@@ -119,7 +119,7 @@ aside {
   border-top: 5px solid #1098bd;
   border-bottom: 5px solid #1098bd;
   padding: 50px 0;
-  width: 500px;
+  /* width: 500px; */
 }
 
 /* Pseudo Class */
@@ -226,7 +226,7 @@ footer p {
 /* Centering our content */
 
 .container {
-  width: 1200px;
+  /* width: 1200px; */
   margin-left: auto;
   margin-right: auto;
   /* position: relative; */
@@ -371,9 +371,11 @@ nav {
 
 .content {
   display: flex;
+  align-items: flex-start;
   gap: 75px;
   margin-bottom: 60px;
-  align-items: flex-start;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 aside {
@@ -382,5 +384,9 @@ aside {
 
 article {
   flex: 1;
+  margin-bottom: 0;
+}
+
+footer p {
   margin-bottom: 0;
 }

@@ -131,8 +131,8 @@ li {
 .el {
   height: 20px;
   width: 20px;
-  display: inline-block;
-  margin-right: 15px;
+  /* display: inline-block;
+  margin-right: 15px; */
 }
 
 .el-1 {
@@ -157,7 +157,7 @@ li {
 
 /* Challenge on FLoats */
 
-.container {
+/* .container {
   box-sizing: content-box;
 }
 
@@ -194,4 +194,28 @@ li {
   clear: both;
   content: '';
   display: block;
+} */
+
+/* Layout using Flexbox */
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.colors {
+  display: flex;
+  gap: 15px;
+}
+
+.product-img {
+  align-self: stretch;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
