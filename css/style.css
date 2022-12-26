@@ -110,7 +110,6 @@ footer p {
   padding-right: 40px; */
   /* Shorthand padding specified */
   padding: 20px 40px;
-  margin-bottom: 40px;
   /* height: 100px; */
 }
 
@@ -369,7 +368,9 @@ nav {
   margin-bottom: 5px;
 }
 
-.content {
+/* DEACTIVATING FLEXBOX LAYOUT TO ADD CSS GRID */
+
+/* .content {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -389,4 +390,24 @@ article {
 
 footer p {
   margin-bottom: 0;
+} */
+
+/* CSS GRID PAGE LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main-header {
+  grid-column: 1/ -1;
+}
+
+footer {
+  grid-column: 1/ -1;
 }

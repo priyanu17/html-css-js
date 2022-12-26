@@ -198,6 +198,7 @@ li {
 
 /* Layout using Flexbox */
 
+/* Deactivating this for CSS layout */
 .content-container {
   display: flex;
   align-items: flex-start;
@@ -218,4 +219,23 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Layout using CSS GRID */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.header {
+  grid-column: 1/ -1;
+  grid-row: 1;
+}
+
+.button {
+  grid-column: 1/ -1;
+  grid-row: 3;
 }
