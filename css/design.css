@@ -107,6 +107,10 @@ img {
 
 /* FEATURES */
 .features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -170,6 +174,21 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #087f5b;
+  height: 24px;
+  width: 24px;
+}
+
+.chair {
+  /* SHADOW PARAMS */
+  /* 
+  1) Horizontal offset -> usually 0
+  2) Vertical offset -> usually 5-10px
+  3) blur -> must have usually equal to vertical offset
+  4) shadow scale -> usually 0
+  5) color -> usually with low opacity
+  */
+  box-shadow: 0 20px 30px 0 rgba(10, 5, 5, 0.2);
 }
 
 .chair-price {
