@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      img {
+        height: 200px;
+        border-radius: 8px;
+        transform: scale(1.5);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .carousal {
+        background-color: #087f5b;
+        width: 800px;
+        margin: 100px auto;
+        border-radius: 8px;
+
+        padding: 32px 48px 32px 86px;
+
+        /* LAYOUT */
+        display: flex;
+        align-items: center;
+        gap: 86px;
+        position: relative;
+      }
+
+      .testimonial-text {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 12px;
+        color: #e6fcf5;
+      }
+      .testimonial-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #c3fae8;
+      }
+      .testimonial-job {
+        font-size: 12px;
+        color: #96f2d7;
+      }
+
+      .btn {
+        border: none;
+        background-color: #fff;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+
+      .btn-icon {
+        height: 24px;
+        width: 24px;
+        stroke: #087f5b;
+      }
+
+      .btn-left {
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+      .btn-right {
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 30px);
+        display: flex;
+        gap: 12px;
+      }
+      .dot {
+        border: none;
+        height: 12px;
+        width: 12px;
+        border-radius: 12px;
+        border: 2px solid #087f5b;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      .dot-filled {
+        background-color: #087f5b;
+      }
+    </style>
+    <title>Carousel</title>
+  </head>
+  <body>
+    <div class="carousal">
+      <img src="../img/maria.jpg" alt="Maria de Almedida" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium rerum libero eveniet voluptatum, distinctio animi! Autem!
+        </p>
+        <p class="testimonial-author">Maria de Almedida</p>
+        <p class="testimonial-job">Senior Product Manager at EDP Commercial</p>
+      </blockquote>
+
+      <button class="btn btn-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn btn-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot-filled">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
