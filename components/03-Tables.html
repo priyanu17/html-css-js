@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        height: 200px;
+        border-radius: 8px;
+        transform: scale(1.5);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+      }
+
+      table {
+        width: 800px;
+        border-collapse: collapse;
+        display: none;
+      }
+
+      td,
+      th {
+        /* border: 1px solid black; */
+        padding: 16px 24px;
+        text-align: left;
+        width: 25%;
+      }
+
+      thead th {
+        background-color: #087f5b;
+        color: #fff;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: rgb(237, 239, 234);
+      }
+      tbody tr:nth-child(even) {
+        background-color: rgb(219, 220, 224);
+      }
+
+      .pagination-container {
+        margin: 100px;
+        font-size: 18px;
+      }
+
+      .btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        background-color: #fff;
+        border: 1px solid #087f5b;
+        cursor: pointer;
+      }
+
+      .btn:hover,
+      .btn:active {
+        background-color: #087f5b;
+      }
+
+      .btn:hover .btn-icon,
+      .btn:active .btn-icon {
+        stroke: #fff;
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      .numbers-container {
+        display: flex;
+        align-items: center;
+        margin: 0px 15px;
+      }
+
+      .pagination-container {
+        display: flex;
+        align-items: center;
+      }
+
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        text-decoration: none;
+      }
+
+      a:link,
+      a:visited {
+        color: #343a40;
+      }
+
+      a:hover,
+      a:active,
+      .page-number.selected {
+        background-color: #087f5b;
+        color: white;
+      }
+    </style>
+    <title>Tables</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Chair</th>
+          <th>The Laid Back</th>
+          <th>The Worker Bee</th>
+          <th>The Chair4/2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80cm</td>
+          <td>60cm</td>
+          <td>40cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>60cm</td>
+          <td>80cm</td>
+          <td>34cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>40cm</td>
+          <td>80cm</td>
+          <td>60cm</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>45 kg</td>
+          <td>34 kg</td>
+          <td>89 kg</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pagination-container">
+      <button class="btn btn-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <div class="numbers-container">
+        <a href="#" class="page-number">1</a>
+        <a href="#" class="page-number">2</a>
+        <a href="#" class="page-number selected">3</a>
+        <a href="#" class="page-number">4</a>
+        <a href="#" class="page-number">5</a>
+        <a href="#" class="page-number">6</a>
+        <a href="#" class="page-number">7</a>
+
+        <span> ... </span>
+        <a href="#" class="page-number">23</a>
+      </div>
+      <button class="btn btn-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
