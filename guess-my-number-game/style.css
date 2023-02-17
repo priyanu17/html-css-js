@@ -20,10 +20,14 @@ body {
   column-gap: 1.2rem;
 }
 
-.button-again {
+.button {
   font-size: 1.8rem;
   border: none;
+  display: block;
   padding: 0.8rem 2rem;
+}
+
+.again {
   align-self: start;
   justify-self: start;
 }
@@ -54,7 +58,6 @@ body {
   display: flex;
   width: 30%;
 }
-
 .user-input-form {
   align-self: start;
   justify-self: start;
@@ -70,13 +73,6 @@ body {
   border-radius: 1rem;
   margin-bottom: 1rem;
   width: 40%;
-}
-
-.button-check {
-  font-size: 1.6rem;
-  display: block;
-  border: none;
-  padding: 0.8rem 2rem;
 }
 
 .game-params {
