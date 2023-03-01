@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(235, 101, 179),
+    rgb(102, 11, 102)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-content {
+  width: 60vw;
+  background-color: rgb(221, 136, 190);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.game-section {
+  width: 30vw;
+  padding: 6.4rem 4.8rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player-title {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: black;
+}
+
+.player-dice-score {
+  font-size: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.score-container {
+  background-color: rgb(193, 16, 116);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.4rem 2.8rem;
+  border-radius: 0.8rem;
+}
+
+.score-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+.player-score {
+  font-size: 1.4rem;
+}
+
+.active {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(213, 161, 230),
+    rgb(155, 143, 155)
+  );
+}
+
+.inactive {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(160, 135, 172),
+    rgb(99, 40, 106)
+  );
+}
