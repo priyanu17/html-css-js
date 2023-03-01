@@ -14,8 +14,8 @@ body {
   width: 100vw;
   background-image: linear-gradient(
     to bottom right,
-    rgb(235, 101, 179),
-    rgb(102, 11, 102)
+    rgb(238, 116, 187),
+    rgb(103, 6, 103)
   );
   display: flex;
   align-items: center;
@@ -23,16 +23,15 @@ body {
 }
 
 .game-content {
-  width: 60vw;
   background-color: rgb(221, 136, 190);
   border-radius: 1.2rem;
   overflow: hidden;
   display: flex;
+  position: relative;
 }
 
 .game-section {
-  width: 30vw;
-  padding: 6.4rem 4.8rem;
+  padding: 6.4rem 7.8rem;
   color: white;
   display: flex;
   align-items: center;
@@ -40,7 +39,7 @@ body {
 }
 
 .player-title {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   text-transform: uppercase;
   color: black;
 }
@@ -82,4 +81,29 @@ body {
     rgb(160, 135, 172),
     rgb(99, 40, 106)
   );
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  background-color: rgb(255, 255, 255, 0.75);
+  font-size: 1.2rem;
+  border-radius: 2.4rem;
+  text-transform: uppercase;
+  transform: translate(-50%);
+  color: #444;
+}
+
+.btn-new-game {
+  top: 3.2rem;
+}
+
+.btn-roll-dice {
+  top: 20.2rem;
+}
+
+.btn-hold {
+  top: 24rem;
 }
