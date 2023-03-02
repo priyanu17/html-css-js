@@ -8,29 +8,35 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <div class="game-content">
-        <div class="game-section active">
-          <div class="player-title">Player 1</div>
-          <div class="player-dice-score">0</div>
+    <main class="container">
+      <section class="game-content">
+        <div class="game-section" id="game-section-one">
+          <h2 class="player-title" id="player-title-one"></h2>
+          <p class="player-dice-score"></p>
           <div class="score-container">
-            <div class="score-title">CURRENT</div>
-            <div class="player-score">0</div>
+            <p class="score-title"></p>
+            <p class="player-score" id="player-score-one"></p>
           </div>
         </div>
-        <div class="game-section inactive">
-          <div class="player-title">Player 2</div>
-          <div class="player-dice-score">0</div>
+        <div class="game-section" id="game-section-two">
+          <h2 class="player-title" id="player-title-two"></h2>
+          <p class="player-dice-score"></p>
           <div class="score-container">
-            <div class="score-title">CURRENT</div>
-            <div class="player-score">0</div>
+            <p class="score-title"></p>
+            <p class="player-score" id="player-score-two"></p>
           </div>
         </div>
+        <image
+          src="./imgs/dice-1.png"
+          alt="Dice Image"
+          class="absolute-common dice-image"
+        />
+        <button class="absolute-common btn btn-new-game">New Game</button>
+        <button class="absolute-common btn btn-roll-dice">Roll The Dice</button>
+        <button class="absolute-common btn btn-hold">Hold</button>
+      </section>
+    </main>
 
-        <button class="btn btn-new-game">New Game</button>
-        <button class="btn btn-roll-dice">Roll The Dice</button>
-        <button class="btn btn-hold">Hold</button>
-      </div>
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>
