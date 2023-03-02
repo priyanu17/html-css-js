@@ -14,8 +14,8 @@ body {
   width: 100vw;
   background-image: linear-gradient(
     to bottom right,
-    rgb(187, 149, 171),
-    rgb(193, 71, 110)
+    rgb(209, 22, 81),
+    rgb(125, 17, 131)
   );
   display: flex;
   align-items: center;
@@ -23,7 +23,6 @@ body {
 }
 
 .game-content {
-  background-color: rgb(221, 136, 190);
   border-radius: 1.2rem;
   overflow: hidden;
   display: flex;
@@ -37,9 +36,9 @@ body {
   align-items: center;
   flex-direction: column;
   background-image: linear-gradient(
-    to top left,
-    rgb(225, 213, 235),
-    rgb(121, 45, 109)
+    to bottom right,
+    rgb(213, 196, 219),
+    rgb(224, 58, 166)
   );
 }
 
@@ -73,19 +72,7 @@ body {
 }
 
 .active {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(213, 161, 230),
-    rgb(155, 143, 155)
-  );
-}
-
-.inactive {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(160, 135, 172),
-    rgb(99, 40, 106)
-  );
+  background-image: linear-gradient(to bottom right, white, red);
 }
 
 .absolute-common {
