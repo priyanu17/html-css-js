@@ -14,11 +14,6 @@ const holdButton = document.querySelector('.btn-hold');
 const gameSectionOne = document.getElementById('game-section-1');
 const gameSectionTwo = document.getElementById('game-section-2');
 
-// setting player scores to 0
-playerDiceScoresEle.forEach((scoreElement) => {
-  scoreElement.textContent = '0';
-});
-
 //setting player titles
 playerOneTitleEle.textContent = 'Player 1';
 playerTwoTitleEle.textContent = 'Player 2';
@@ -28,21 +23,36 @@ scoreTitlesEle.forEach((scoreTitle) => {
   scoreTitle.textContent = 'CURRENT';
 });
 
-//setting up current score
-playerScoreOneEle.textContent = '0';
-playerScoreTwoEle.textContent = '0';
+// game state variables
+let activePlayer, currentScore, playerScores, playing;
 
-//make player one as active
-// hide dice image on load
-diceImageEle.classList.add('hidden');
-gameSectionOne.classList.add('active');
+function initializeGameParams() {
+  activePlayer = 0;
+  currentScore = 0;
+  playerScores = [0, 0];
+  playing = true;
 
-// current score variable
+  //make player one as active
+  // hide dice image on load
+  diceImageEle.classList.add('hidden');
+  gameSectionOne.classList.add('active');
 
-let activePlayer = 0;
-let currentScore = 0;
-let playerScores = [0, 0];
-let playing = true;
+  //setting up current score
+  playerScoreOneEle.textContent = '0';
+  playerScoreTwoEle.textContent = '0';
+
+  // setting player scores to 0
+  playerDiceScoresEle.forEach((scoreElement) => {
+    scoreElement.textContent = '0';
+  });
+
+  document
+    .getElementById(`game-section-${activePlayer + 1}`)
+    .classList.remove('game-winner');
+  gameSectionTwo.classList.remove('active');
+}
+
+initializeGameParams();
 
 function switchPlayer() {
   if (!playing) {
@@ -103,3 +113,5 @@ holdButton.addEventListener('click', function () {
     playing = false; // disable other buttons
   }
 });
+
+newGameButton.addEventListener('click', initializeGameParams);
