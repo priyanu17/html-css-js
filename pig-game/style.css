@@ -113,3 +113,12 @@ body {
 .hidden {
   display: none;
 }
+
+.game-winner {
+  background-image: linear-gradient(to bottom right, gray, black);
+  color: white;
+}
+
+.game-winner .player-title {
+  color: white;
+}
